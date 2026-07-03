@@ -1,9 +1,6 @@
 ---
-title: Bách Nguyễn
----
+layout: home
+title: Home
 ---
 
-- cloud storage
-- chat app
-
-@Worms
+Welcome.
