@@ -1,9 +1,6 @@
 ---
+layout: page
 title: About
 ---
----
 
----
-
-> What a quote!
-
+About page.
