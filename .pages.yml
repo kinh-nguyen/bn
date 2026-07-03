@@ -54,18 +54,6 @@ content:
           - name: body
             type: rich-text
 
-      - name: about
-        label: About
-        type: file
-        path: docs/about.md
-        fields:
-          - name: layout
-            type: string
-          - name: title
-            type: string
-          - name: body
-            type: rich-text
-
   - name: posts
     label: Blog
     type: collection
