@@ -1,0 +1,24 @@
+media:
+  input: docs/assets
+  output: /assets
+
+content:
+  - name: home
+    label: Home
+    type: file
+    path: docs/index.md
+    fields:
+      - name: title
+        type: string
+      - name: body
+        type: rich-text
+
+  - name: about
+    label: About
+    type: file
+    path: docs/about.md
+    fields:
+      - name: title
+        type: string
+      - name: body
+        type: rich-text
