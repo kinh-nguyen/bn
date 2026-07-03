@@ -3,22 +3,90 @@ media:
   output: /assets
 
 content:
-  - name: home
-    label: Home
-    type: file
-    path: docs/index.md
-    fields:
-      - name: title
-        type: string
-      - name: body
-        type: rich-text
+  - name: site
+    label: Site
+    type: group
+    items:
+      - name: settings
+        label: Settings
+        type: file
+        path: docs/_config.yml
+        fields:
+          - name: title
+            label: Site title
+            type: string
+          - name: description
+            type: text
+          - name: theme
+            type: string
+          - name: header_pages
+            label: Header pages
+            type: string
+            list: true
 
-  - name: about
-    label: About
-    type: file
-    path: docs/about.md
+      - name: navigation
+        label: Navigation
+        type: file
+        path: docs/_data/navigation.yml
+        format: yaml
+        list: true
+        fields:
+          - name: name
+            label: Label
+            type: string
+          - name: link
+            label: URL
+            type: string
+
+  - name: pages
+    label: Pages
+    type: group
+    items:
+      - name: home
+        label: Home
+        type: file
+        path: docs/index.md
+        fields:
+          - name: layout
+            type: string
+          - name: title
+            type: string
+          - name: body
+            type: rich-text
+
+      - name: about
+        label: About
+        type: file
+        path: docs/about.md
+        fields:
+          - name: layout
+            type: string
+          - name: title
+            type: string
+          - name: body
+            type: rich-text
+
+  - name: posts
+    label: Blog
+    type: collection
+    path: docs/_posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    subfolders: false
+    view:
+      primary: title
+      sort: date
+      order: desc
     fields:
+      - name: layout
+        type: string
       - name: title
         type: string
+      - name: date
+        type: date
+      - name: excerpt
+        type: text
+      - name: tags
+        type: string
+        list: true
       - name: body
         type: rich-text
