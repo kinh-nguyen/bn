@@ -1,35 +1,18 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+---
+---
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+@import "{{ site.theme }}";
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
-}
-
-.site-main {
-  min-height: 70vh;
-  padding: 2rem 1rem;
-}
-
+/* Footer parallax */
 .footer-skyline {
   position: relative;
   overflow: hidden;
   background: #1f4b4f;
+  margin-top: 2rem;
 }
 
 .footer-skyline__inner {
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
