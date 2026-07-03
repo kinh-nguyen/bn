@@ -1,9 +1,8 @@
 ---
+# Only the main Sass file needs front matter
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+@import "minima";
 
 /* Footer parallax */
 .footer-skyline {
@@ -34,12 +33,11 @@
   width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
-  list-style: none !important;
   transform: translate3d(0, 0, 0);
   will-change: transform;
 }
 
-.footer-skyline__layer:first-child {
+.footer-skyline__layer--back {
   position: relative !important;
 }
 
