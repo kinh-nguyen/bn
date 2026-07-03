@@ -3,4 +3,6 @@ layout: home
 title: Home
 ---
 
-Welcome.
+
+![](/assets/back.svg)
+
