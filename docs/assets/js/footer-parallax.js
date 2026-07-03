@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  trigger.addEventListener("mousemove", (e) => {
-    moveLayers(e.clientX);
+  trigger.addEventListener("mousemove", (event) => {
+    moveLayers(event.clientX);
   });
 
   trigger.addEventListener("mouseleave", () => {
