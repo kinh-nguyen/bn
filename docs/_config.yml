@@ -2,5 +2,4 @@ title: BN
 description: Personal site and blog
 theme: minima
 header_pages:
-  - about.md
   - blog.md
