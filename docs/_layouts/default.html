@@ -1,17 +1,29 @@
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<script src="{{ '/assets/js/footer-parallax.js' | relative_url }}"></script>
-<footer class="footer-skyline">
-  <div class="footer-skyline__inner">
-    <ul class="footer-skyline__scene" id="footerParallax" aria-hidden="true">
-      <li class="footer-skyline__layer" data-depth-x="0.33">
-        <img src="{{ '/assets/img/03_silhouette-hinten.svg' | relative_url }}" alt="">
-      </li>
-      <li class="footer-skyline__layer" data-depth-x="0.66">
-        <img src="{{ '/assets/img/02_silhouette-mitte.svg' | relative_url }}" alt="">
-      </li>
-      <li class="footer-skyline__layer" data-depth-x="1">
-        <img src="{{ '/assets/img/01_silhouette-vorne.svg' | relative_url }}" alt="">
-      </li>
-    </ul>
-  </div>
-</footer>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {{ content }}
+
+  <footer class="footer-skyline">
+    <div class="footer-skyline__inner">
+      <ul class="footer-skyline__scene" id="footerParallax" aria-hidden="true">
+        <li class="footer-skyline__layer" data-depth-x="0.33">
+          <img src="{{ '/assets/img/03_silhouette-hinten.svg' | relative_url }}" alt="">
+        </li>
+        <li class="footer-skyline__layer" data-depth-x="0.66">
+          <img src="{{ '/assets/img/02_silhouette-mitte.svg' | relative_url }}" alt="">
+        </li>
+        <li class="footer-skyline__layer" data-depth-x="1">
+          <img src="{{ '/assets/img/01_silhouette-vorne.svg' | relative_url }}" alt="">
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/footer-parallax.js' | relative_url }}"></script>
+</body>
+</html>
