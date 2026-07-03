@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Home
 ---
 <div class="footer-skyline">
   <div class="footer-skyline__inner">
