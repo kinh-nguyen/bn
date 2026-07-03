@@ -1,0 +1,50 @@
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+/* Footer parallax */
+.footer-skyline {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.footer-skyline__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-skyline__scene {
+  position: relative !important;
+  display: block !important;
+  height: 220px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+.footer-skyline__layer {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.footer-skyline__layer:first-child {
+  position: relative !important;
+}
+
+.footer-skyline__layer img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+}
